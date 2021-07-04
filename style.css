@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  padding: 0 20px;
+  margin-top: 2rem;
+  height: 300px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.container .item + .item {
+  margin-left: .5rem;
+}
+
+.container .item {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: aquamarine;
+  height: 100%;
+  width: 300px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+  opacity: 0;
+}
+
+.container ::-webkit-scrollbar-track {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
